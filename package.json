@@ -1,0 +1,27 @@
+{
+  "name": "rx-component",
+  "version": "0.0.1",
+  "description": "Functional, reactive React components",
+  "main": "rx-component.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json '*.tsx'"
+  },
+  "author": "Felix Becker <felix.b@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixfbecker/rx-component"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@sourcegraph/tslint-config": "^1.0.1",
+    "@types/react": "^16.0.5",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "rxjs": "^5.4.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable",
+      "es2017.object"
+    ],
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "plugins": [
+      {
+        "name": "tslint-language-service",
+        "configFile": "./tslint.json"
+      }
+    ]
+  },
+  "include": [
+    "*.tsx"
+  ]
+}
