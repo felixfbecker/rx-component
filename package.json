@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Functional, reactive React components",
   "main": "rx-component.js",
+  "types": "rx-component.d.ts",
   "scripts": {
     "build": "tsc -p .",
     "watch": "tsc -p . -w",
