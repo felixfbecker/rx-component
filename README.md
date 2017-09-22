@@ -35,7 +35,8 @@ export const Counter = reactive(() => {
         increments.mapTo(1),
         decrements.mapTo(-1)
     )
-        .scan((count, change) => count + change)
+        .startWith(0)
+        .scan((count, change) => count + change, 0)
         .map(count =>
             <div>
                 {count}
@@ -52,4 +53,4 @@ export const Counter = reactive(() => {
  - [`react-rx-component`](https://www.npmjs.com/package/react-rx-component) Only maps Props → State and separates the render.
  - [`rx-react`](https://www.npmjs.com/package/rx-react) Allows you to define your state with rxjs with `getStateStream()`, but not get rid of state completely.
  - [`react-rx`](https://www.npmjs.com/package/react-rxjs) Requires you to create external stores
- - [`reaxjs`](https://www.npmjs.com/package/reaxjs) Too complex, takes `eventToValues`, `observablesFactory` and `PureComponent`
+ - [`reaxjs`](https://www.npmjs.com/package/reaxjs) More complex, takes `eventToValues`, `observablesFactory` and `PureComponent`
