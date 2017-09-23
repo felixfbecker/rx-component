@@ -1,6 +1,6 @@
 {
   "name": "rx-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Functional, reactive React components",
   "main": "rx-component.js",
   "types": "rx-component.d.ts",
