@@ -7,3 +7,11 @@ node_js:
 script:
   - npm run build
   - npm run lint
+
+before_deploy:
+  - npm run build-examples
+deploy:
+  skip_cleanup: true
+  provider: surge
+  project: ./assets/
+  domain: rx-component.surge.sh

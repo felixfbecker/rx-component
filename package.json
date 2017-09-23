@@ -7,6 +7,8 @@
   "scripts": {
     "build": "tsc -p .",
     "watch": "tsc -p . -w",
+    "examples": "budo examples/index.tsx -d assets -o -v --index assets/index.html -- --debug -p tsify",
+    "build-examples": "browserify examples/index.tsx --debug -p tsify -o assets/index.js",
     "lint": "tslint -c tslint.json -p tsconfig.json '*.tsx'"
   },
   "author": "Felix Becker <felix.b@outlook.com>",
@@ -17,8 +19,13 @@
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^16.0.5",
-    "tslint": "^5.7.0",
+    "@types/react-dom": "^15.5.4",
+    "browserify": "^14.4.0",
+    "budo": "^10.0.4",
+    "react-dom": "^15.6.1",
     "rxjs-tslint-rules": "^2.1.6",
+    "tsify": "^3.0.3",
+    "tslint": "^5.7.0",
     "tslint-react": "^3.2.0",
     "typescript": "^2.5.2"
   },

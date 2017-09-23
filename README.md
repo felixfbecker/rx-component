@@ -19,6 +19,8 @@ No mutable state to manage, no bugs with asynchronous `setState`, clear data flo
 
 ## Example
 
+[See it in action](https://rx-component.surge.sh)
+
 ```js
 import reactive from 'rx-component'
 import { Subject } from 'rxjs'
@@ -46,6 +48,10 @@ export const Counter = reactive(() => {
         )
 })
 ```
+
+## Hack on examples
+
+`npm run examples` fires up a local development server that serves the examples and opens a browser.
 
 ## Comparison to other libraries
  
