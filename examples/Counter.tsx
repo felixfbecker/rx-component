@@ -25,8 +25,6 @@ const Counter = reactive(props => {
 
     // We want the view to update every time a button is clicked, so this is the start of our chain
     return Observable.merge(
-        // Triggers the initial render
-        Observable.of(0),
         // We represents increment and decrement events as the change to apply compared to the previous state,
         // For this simple Counter example, that is simply the difference to the previous value
         increments.mapTo(1),
