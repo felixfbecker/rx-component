@@ -24,16 +24,14 @@ export default function reactive<P = {}>(createObservable: (props: Observable<P>
         private renderedElement: JSX.Element | null = null
 
         /** Emits on `componentWillReceiveProps` */
-        private propsUpdates: Subject<P>
+        private propsUpdates = new Subject<P>()
 
         /** Subscription to the Observable */
         private subscription: Subscription
 
         public static displayName = createObservable.name
 
-        constructor(props: P) {
-            super(props)
-            this.propsUpdates = new Subject()
+        public componentWillMount(): void {
             this.subscription = createObservable(this.propsUpdates.asObservable()).subscribe(renderedElement => {
                 this.renderedElement = renderedElement
                 this.forceUpdate()
