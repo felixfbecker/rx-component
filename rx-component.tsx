@@ -36,6 +36,7 @@ export default function reactive<P = {}>(createObservable: (props: Observable<P>
                 this.renderedElement = renderedElement
                 this.forceUpdate()
             })
+            this.propsUpdates.next(this.props)
         }
 
         public componentWillUnmount(): void {
