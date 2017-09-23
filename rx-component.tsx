@@ -33,6 +33,7 @@ export default function reactive<P = {}>(createObservable: (props: Observable<P>
 
         constructor(props: P) {
             super(props)
+            this.propsUpdates = new Subject()
             this.subscription = createObservable(this.propsUpdates.asObservable()).subscribe(renderedElement => {
                 this.renderedElement = renderedElement
                 this.forceUpdate()
