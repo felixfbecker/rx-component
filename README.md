@@ -1,6 +1,8 @@
 
 # Functional, Reactive React Components
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/felixfbecker/rx-component.svg)](https://greenkeeper.io/)
+
 > Look ma, no state!
 
 [![npm](https://img.shields.io/npm/v/rx-component.svg)](https://npmjs.com/package/rx-component)
