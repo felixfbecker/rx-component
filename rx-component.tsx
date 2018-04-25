@@ -1,8 +1,6 @@
 
 import * as React from 'react'
-import { Observable } from 'rxjs/Observable'
-import { Subject } from 'rxjs/Subject'
-import { Subscription } from 'rxjs/Subscription'
+import { Observable, Subject, Subscription } from 'rxjs'
 
 /**
  * Creates a reactive component.

@@ -6,13 +6,7 @@
   ],
   "rules": {
 
-    "rxjs-add": {
-      "severity": "error"
-    },
-    "rxjs-no-unused-add": {
-      "severity": "error"
-    },
-    "rxjs-no-wholesale": true,
+    "rxjs-no-wholesale": false,
 
     "jsx-self-close": false,
     "jsx-no-multiline-js": false,
